@@ -1,0 +1,75 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.glob {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+#friendList img {
+    transform: translateY(85%);
+}
+
+#Profile img {
+    transform: translateY(20%);
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#friendList p {
+    color: black;
+    text-align: center;
+    transform: translateY(-230%);
+}
+
+#Profile p {
+    color: white;
+    text-align: center;
+    transform: translateY(-200%);
+}
+
+#friendList,
+#Profile {
+    height: 100%;
+    width: 50%;
+}
+
+#friendList {
+    background-color: white;
+}
+
+#Profile {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#return {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 195px;
+}
+
+#button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}

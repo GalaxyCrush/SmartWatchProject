@@ -1,8 +1,18 @@
-const map = document.querySelectorAll("#map")
-const social = document.querySelectorAll("#social")
+const list = document.querySelectorAll("#friendList");
+const profile = document.querySelectorAll("#Profile");
+var URLs = ["../MainMenu/social.html", "../Mapa/map.html"];
 
 
-for (const element of map) {
+function changePageToSocial() {
+    document.location.href = URLs[0];
+}
+
+function changePageToMap() {
+    document.location.href = URLs[1];
+}
+
+
+for (const element of list) {
     element.addEventListener('click', (e) => {
         console.log(e.currentTarget.id)
     })
@@ -16,7 +26,7 @@ for (const element of map) {
     })
 }
 
-for (const element of social) {
+for (const element of profile) {
     element.addEventListener('click', (e) => {
         console.log(e.currentTarget.id)
     })
