@@ -1,0 +1,57 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.glob {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#notes,
+#settings {
+    height: 100%;
+    width: 50%;
+}
+
+.glob img {
+    max-width: 40%;
+}
+
+#settings {
+    position: absolute;
+    top: 60px;
+    right: -35px;
+}
+
+#settings img {
+    max-width: 30%;
+}
+
+#return {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 195px;
+}
+
+#button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}
