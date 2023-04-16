@@ -5,11 +5,24 @@ html {
     margin: 0;
 }
 
-.glob {
+/* .glob {
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
+} */
+
+.glob {
+    position: relative;
+    z-index: 98;
+    border-radius: 50%;
+    height: 232.2px;
+    width: 232.2px;
+    border: 0px;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 #friendList img {

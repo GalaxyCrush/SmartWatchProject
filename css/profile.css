@@ -6,8 +6,14 @@ html {
 }
 
 .glob {
-    height: 100%;
-    width: 100%;
+    position: relative;
+    z-index: 98;
+    border-radius: 50%;
+    height: 232.2px;
+    width: 232.2px;
+    list-style: none;
+    overflow: hidden;
+    border: 2px solid black;
 }
 
 img {
@@ -27,21 +33,47 @@ img {
     max-width: 40%;
 }
 
+#notes {
+    position: absolute;
+    top: 60px;
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    right: 187px;
+}
+
+#notes img {
+    max-width: 100%;
+}
+
 #settings {
     position: absolute;
     top: 60px;
-    right: -35px;
+    border: 2px solid black;
+    height: 30px;
+    width: 30px;
+    right: 10px;
 }
 
 #settings img {
-    max-width: 30%;
+    max-width: 100%;
+}
+
+.glob p {
+    text-align: center;
+    margin: 6px;
 }
 
 #return {
     position: absolute;
-    width: 100%;
-    height: auto;
-    top: 195px;
+    width: 116px;
+    height: 28px;
+    top: 200px;
+    right: 60px;
+}
+
+#return img {
+    max-width: 150%;
 }
 
 #button {
