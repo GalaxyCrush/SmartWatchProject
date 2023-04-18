@@ -1,0 +1,59 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.glob {
+    position: relative;
+    z-index: 98;
+    border-radius: 50%;
+    height: 232.2px;
+    width: 232.2px;
+    border: 0px;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#map img {
+    position: absolute;
+    height: 232.2px;
+    display: block;
+    margin: auto;
+}
+
+#mapMenu img {
+    position: absolute;
+    z-index: 1;
+    height: 40px;
+    right: 7em;
+    top: 0em;
+    display: block;
+    margin: auto;
+}
+
+#return {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 195px;
+}
+
+#button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+#return img {
+    max-width: 60%;
+}

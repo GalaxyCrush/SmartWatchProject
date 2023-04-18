@@ -1,6 +1,6 @@
 const list = document.querySelectorAll("#friendList");
 const profile = document.querySelectorAll("#Profile");
-var URLs = ["../MainMenu/social.html", "../Mapa/map.html"];
+let URLs = ["../MainMenu/social.html", "../MainMenu/map.html"];
 
 
 function changePageToSocial() {

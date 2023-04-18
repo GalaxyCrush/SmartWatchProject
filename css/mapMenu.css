@@ -1,0 +1,82 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.glob {
+    position: relative;
+    z-index: 98;
+    border-radius: 50%;
+    height: 232.2px;
+    width: 232.2px;
+    border: 0px;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#filter img {
+    transform: translateY(85%);
+}
+
+#waypoints img {
+    transform: translateY(20%);
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+#filter p {
+    color: black;
+    text-align: center;
+    transform: translateY(-280%);
+}
+
+#waypoints p {
+    color: white;
+    text-align: center;
+    transform: translateY(-200%);
+}
+
+#filter,
+#waypoints {
+    height: 100%;
+    width: 50%;
+}
+
+#filter {
+    background-color: white;
+}
+
+#waypoints {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#return {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: auto;
+    top: 195px;
+}
+
+#button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}

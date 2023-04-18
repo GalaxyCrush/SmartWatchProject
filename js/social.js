@@ -1,6 +1,6 @@
 const map = document.querySelectorAll("#frindList");
 const social = document.querySelectorAll("#Profile");
-var URLs = ["../Social/friendlist.html", "../Social/profile.html", "../MainMenu/menu.html"];
+let URLs = ["../Social/friendlist.html", "../Social/userprofile.html", "../MainMenu/menu.html"];
 
 
 function changePageTofriendList() {
