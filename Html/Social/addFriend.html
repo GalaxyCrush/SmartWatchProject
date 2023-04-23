@@ -6,8 +6,15 @@
 </head>
 
 <div class="glob">
-    <input type="text" id="info">
-    <input type="text" id="id">
+    <form id="addForm">
+
+        insira o nome
+        <input type="text" id="info">
+        <p>insira o id</p>
+        <input type="text" id="id">
+    </form>
+    <button type="submit" form="addForm" value="Submit" id="inFriend" onclick="addFriend()"><img
+            src="../../Images/add.png" alt="addB" id="addBImage"></button>
     <div id="return"> <button type="button" id="button" name="returnB" onclick="changeToPrevious()"><img
                 src="../../Images/retun.png" alt="return"></button></div>
 </div>

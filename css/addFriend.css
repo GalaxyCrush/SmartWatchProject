@@ -43,6 +43,32 @@ button {
     padding: 6px 16px;
 }
 
-input {
-    top: -20px
+
+
+#inFriend {
+    position: absolute;
+    top: 10em;
+    right: 6em;
+    width: 30%;
+    height: 30%;
+    color: blueviolet;
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+
+
+#addBImage {
+    width: 2.5em;
+    height: auto;
+}
+
+
+#addForm {
+    position: relative;
+    top: 3em;
+    margin-bottom: 1em;
+}
+
+#info {
+    margin-bottom: -5em;
 }
