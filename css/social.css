@@ -5,13 +5,6 @@ html {
     margin: 0;
 }
 
-/* .glob {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-} */
-
 .glob {
     position: relative;
     z-index: 98;
@@ -70,19 +63,29 @@ img {
 
 #return {
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: auto;
-    top: 195px;
+    top: 12.1875em;
 }
 
-#button {
-    max-width: 50%;
+
+#returnMenu {
+    position: absolute;
+    width: 70%;
     height: auto;
-    display: block;
-    margin: auto;
-    border: 0px;
+    top: 0.5em;
+    left: 5.64em;
     background-color: transparent;
-    border-radius: 42px;
+    border: 0em;
     cursor: pointer;
-    padding: 6px 16px;
+}
+
+#returnMenu img {
+    width: 150%;
+    height: auto;
+}
+
+button {
+    width: 60%;
+    height: auto;
 }

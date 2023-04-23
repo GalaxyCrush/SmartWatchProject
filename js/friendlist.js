@@ -1,9 +1,12 @@
 const map = document.querySelectorAll("#frindList");
 const social = document.querySelectorAll("#Profile");
-let URLs = ["../MainMenu/social.html"];
+let URLs = ["../MainMenu/social.html", "../Social/addFriend.html"];
 
 
 function changeToPrevious() {
     document.location.href = URLs[0];
 }
 
+function changeToAddFriend() {
+    document.location.href = URLs[1];
+}
