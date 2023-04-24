@@ -1,0 +1,125 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.circle{
+  height: 232.2px;
+  width: 232.2px;
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.circle div{
+  height: 50%;
+  width: 50%;
+}
+
+.circle div:nth-child(1){
+  background-color:rgb(0, 0, 0);
+  border-radius:100px 0 0 0;
+}
+.circle div:nth-child(2){
+  background-color:rgb(255, 255, 255);
+  border-radius:0 100px 0 0;
+}
+.circle div:nth-child(3){
+  background-color:rgb(255, 255, 255);
+  border-radius:0 0 0 100px;
+}
+.circle div:nth-child(4){
+  background-color:rgb(0, 0, 0);
+  border-radius:0 0 100px 0;
+}
+
+#MultiBanco img {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    left: 40px;
+    top: -102px;
+}
+
+#MultiBanco p {
+  text-align: center;
+  position: relative;
+  top: -110px;
+  left: 12px;
+}
+
+#Museu img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 28px;
+    top: -205px;
+}
+
+#Museu p {
+  text-align: center;
+  text-align: center;
+  position: relative;
+  top: -197px;
+  left: -6px;
+}
+
+#Restauracao img {
+    width: 47px;
+    height: 47px;
+    position: relative;
+    left: 45px;
+    top: -315px;
+}
+
+#Restauracao p {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -310px;
+  left: 7px;
+}
+
+#Transportes img {
+    width: 65px;
+    height: 65px;
+    position: relative;
+    left: 20px;
+    top: -225px;
+}
+
+#Transportes p {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -235px;
+  left: -15px;
+}
+
+#return {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    top: 12.1875em;
+    left: 16px;
+}
+
+#returnMenu {
+    position: absolute;
+    width: 70%;
+    height: auto;
+    top: 0.5em;
+    left: 5.64em;
+    background-color: transparent;
+    border: 0em;
+    cursor: pointer;
+}
+
+#returnMenu img {
+    width: 150%;
+    height: auto;
+}
+
+button {
+    width: 60%;
+    height: auto;
+}

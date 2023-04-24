@@ -68,9 +68,11 @@ button {
 
 
 ul {
+    position: relative;
     list-style: none;
     margin-top: 2em;
     margin-left: 1em;
+    left: 0.5em;
 }
 
 li {
@@ -84,12 +86,21 @@ li {
     margin: 10px 0;
     margin-bottom: 5px;
     position: relative;
-    text-align: right;
-
+    text-align: center;
 }
 
 img {
     width: 20%;
     height: auto;
     position: relative;
+}
+
+#amigos img {
+    left: -3em;
+    top: -0.2em;
+}
+
+li p {
+    position: relative;
+    top: -2.7em;
 }

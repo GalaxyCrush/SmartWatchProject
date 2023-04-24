@@ -16,6 +16,6 @@ function addFriend() {
     let frName = document.getElementById("info").value;
     let frId = document.getElementById("id").value;
     localStorage.setItem(frId + frName, new person(frName, frId, localStorage.getItem(frId)));
-    document.getElementById("amigos").innerHTML += "<li>" + "<img src=" + localStorage.getItem(frId) + "alt=" + frName + ">" + "</li>";
+    document.getElementById("amigos").innerHTML += "<li>" + "<img src=" + localStorage.getItem(frId) + "alt=" + frName + " onclick =" + "changeToFriendProfile()" + ">" + "</li>";
     document.location.href("../Social/friendlist.html");
 }
