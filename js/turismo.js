@@ -1,4 +1,4 @@
-let URLs = ["../Mapa/mapFilterMuseu.html", "../Mapa/mapFilterHotel.html", "../MainMenu/map.html"];
+let URLs = ["../Mapa/mapFilterMuseu.html", "../Mapa/mapFilterHotel.html", "../Mapa/filter.html"];
 
 function changeToMapFilterMuseu() {
     document.location.href = URLs[0];
@@ -9,5 +9,5 @@ function changeToMapFilterHotel() {
 }
 
 function changeToMap() {
-    document.location.href = URLs[0];
+    document.location.href = URLs[2];
 }
