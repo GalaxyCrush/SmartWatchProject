@@ -1,4 +1,4 @@
-let URLs = ["../MainMenu/social.html", "../Social/addFriend.html"];
+let URLs = ["../MainMenu/social.html", "../Social/addFriend.html", "../Social/profile.html"];
 
 
 function changeToPrevious() {
@@ -9,12 +9,43 @@ function changeToAddFriend() {
     document.location.href = URLs[1];
 }
 
+function changeToAddFriend() {
+    document.location.href = URLs[1];
+}
+
+function changeToFriendProfile(friend) {
+    localStorage.setItem("current", JSON.stringify(friend));
+    document.location.href = URLs[2];
+}
+
+function load() {
+    const fString = localStorage.getItem("amigos");
+    if (fString !== null) {
+        return JSON.parse(fString);
+    }
+    return [];
+}
+
+
+const friends = load();
+
 function actFriend() {
-    const yes = document.getElementById("amigos").innerHTML;
-    for (let i = 0; i < localStorage.getItem("amigos").length(); i++) {
-        let aux = localStorage.getItem("amigos")[i];
-        yes += "<li>" + "<img src=" + localStorage.getItem("photos").get(aux.id) + "alt=" + aux.name + " onclick =" + "changeToFriendProfile()" + "> \n <p>" + aux.name + "</li>";
+    let yes = document.getElementById("amigos");
+    for (let i = 0; i < friends.length; i++) {
+        let aux = friends[i];
+        let li = document.createElement("li");
+        li.onclick = () => changeToFriendProfile(friends[i]);
+        let img = document.createElement("img");
+        img.src = photos.get("" + aux.id);
+        img.alt = aux.name;
+        let p = document.createElement("p");
+        p.innerText = aux.name;
+        li.appendChild(img);
+        li.appendChild(p);
+        yes.appendChild(li);
     }
 }
 
 window.onload = actFriend();
+
+

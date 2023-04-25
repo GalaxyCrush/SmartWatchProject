@@ -5,6 +5,7 @@ let URLs = ["../Social/notes.html", "../Social/settings.html", "../MainMenu/soci
 localStorage.setItem("eyeO", "../../Images/view.png");
 localStorage.setItem("eyeC", "../../Images/nview.png");
 
+
 function changePageToNotes() {
     document.location.href = URLs[0];
 }
@@ -31,7 +32,7 @@ function mudaOlho() {
 }
 
 function saveEye() {
-    document.getElementById("olho").src = localStorage.getItem("currentEye");
+    document.getElementById("olho").src = localStorage.getItem("currentEye") || "../../Images/view.png";
 }
 
 window.onload = saveEye();

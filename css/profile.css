@@ -90,3 +90,7 @@ img {
     top: 6em;
     right: 0em;
 }
+
+#pfp {
+    border-radius: 50%;
+}
