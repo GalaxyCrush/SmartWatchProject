@@ -1,12 +1,8 @@
-let URLs = ["../Social/settings.html", "../MainMenu/social.html"];
+let URLs = ["../Social/friendlist.html"];
 
-
-function changePageToSettings() {
-    document.location.href = URLs[0];
-}
 
 function changeToPrevious() {
-    document.location.href = URLs[1];
+    document.location.href = URLs[0];
 }
 
 function load() {
@@ -38,5 +34,15 @@ window.onload = loadPf();
 function removeAlt() {
     const elem = document.getElementById("id").innerHTML;
     const toRemove = elem.split(":");
-    localStorage.setItem("remove", toRemove);
+    console.log(toRemove[1]);
+    localStorage.setItem("remove", toRemove[1]);
+    changeToPrevious();
+}
+
+function appearRemoveDiv() {
+    document.getElementById("removeDiv").style.display = "block";
+}
+
+function vanishDiv() {
+    document.getElementById("removeDiv").style.display = "none";
 }

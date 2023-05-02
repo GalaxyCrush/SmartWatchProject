@@ -17,7 +17,17 @@ function changeToFriendProfile(friend) {
 function load() {
     const fString = localStorage.getItem("amigos");
     if (fString !== null) {
-        return JSON.parse(fString);
+        let friendList = JSON.parse(fString);
+        for (let index = 0; index < friendList.length; index++) {
+            let id = friendList[index].id;
+            if (id == localStorage.getItem("remove")) {
+                localStorage.setItem("remove", "-1");
+                friendList.splice(index, 1);
+                localStorage.setItem("amigos", JSON.stringify(friendList));
+                break;
+            }
+        }
+        return friendList;
     }
     return [];
 }
@@ -28,7 +38,6 @@ const friends = load();
 function actFriend() {
     let yes = document.getElementById("amigos");
     let pf = new Map(JSON.parse(localStorage.getItem("fotos")));
-    console.log(pf);
     for (let i = 0; i < friends.length; i++) {
 
         let aux = friends[i];
@@ -50,11 +59,8 @@ function actFriend() {
     }
 }
 
-// function remove() {
-//     let elem = document.getElementById(localStorage.getItem("remove"))
-//     elem.remove;
-// }
-
-window.onload = actFriend;
+window.addEventListener("load", (e) => {
+    actFriend();
+});
 
 

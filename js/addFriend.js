@@ -15,8 +15,8 @@ function load() {
 
 const friends = load();
 
-document.getElementById("info").setAttribute('required', '');
-document.getElementById("id").setAttribute('required', '');
+document.getElementById("info").setAttribute('required', 'true');
+document.getElementById("id").setAttribute('required', 'true');
 
 document.getElementById("info").addEventListener("beforeinput", (e) => {
     let aux = e.data;
@@ -34,6 +34,7 @@ document.getElementById("id").addEventListener("beforeinput", (e) => {
     let aux = e.data;
     if (!(aux >= '0' && aux <= '9') && aux !== null) {
         e.preventDefault();
+        alert("Id must be a number")
     }
     if (e.currentTarget.value.length > 7 && aux !== null) {
         e.preventDefault();
@@ -44,20 +45,17 @@ document.getElementById("id").addEventListener("beforeinput", (e) => {
 
 function addFriend() {
     let frName = document.getElementById("info").value;
+
     if (frName == null || frName == "") {
-        let div = document.createElement("div");
-        let p = document.createElement("p");
-        p.innerHTML = "Name in mandatory";
-        p.style.color = "white";
-        div.addEventListener('click', (e) => {
-            e.currentTarget.remove();
-        })
-        div.style.position = "absolute";
-        div.style.backgroundColor = "grey";
-        div.appendChild(p);
-        document.body.appendChild(div);
+        appearAlerDiv();
+        return;
     }
+
     let frId = document.getElementById("id").value;
+    if (frId == null || frId == "") {
+        appearAlerDiv();
+        return;
+    }
 
     let val = false;
     let fo = new Map(JSON.parse(localStorage.getItem("fotos")))
@@ -73,11 +71,40 @@ function addFriend() {
         localStorage.setItem("fotos", JSON.stringify(Array.from(fo.entries())));
     }
 
-    const friend = {
-        name: frName,
-        id: frId
-    };
-    friends.push(friend);
-    localStorage.setItem("amigos", JSON.stringify(friends));
-    changeToPrevious();
+    if (verifyFriend(frId) === -1) {
+        const friend = {
+            name: frName,
+            id: frId
+        };
+        friends.push(friend);
+        localStorage.setItem("amigos", JSON.stringify(friends));
+        changeToPrevious();
+    }
+    else {
+        if (document.getElementById("tempDiv") === null) {
+            let div = document.createElement("div");
+            div.id = "tempDiv";
+            let p = document.createElement("p");
+            p.innerText = "Friend already added";
+            div.addEventListener("transitionend", () => {
+                document.getElementById("tempDiv").remove();
+            });
+            div.appendChild(p);
+            document.body.appendChild(div);
+            setTimeout(() => document.getElementById("tempDiv").style.opacity = "0", 1000);
+        }
+    }
+
+}
+
+function verifyFriend(verId) {
+    return friends.findIndex(f => f.id === verId);
+}
+
+function appearAlerDiv() {
+    document.getElementById("alertDiv").style.display = "block";
+}
+
+function vanishDiv() {
+    document.getElementById("alertDiv").style.display = "none";
 }

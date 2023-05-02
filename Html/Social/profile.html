@@ -5,17 +5,27 @@
     <link rel="stylesheet" href="../../css/profile.css">
 </head>
 
-<div class="glob">
-    <img src="../../Images/profile-user.png" alt="caraDaPessoa" id="pfp">
-    <p id="id">Id: </p>
-    <p id="nome">Name: </p>
-    <p id="dist">Distance: </p>
-    <!-- <div id="settings">
-        <img src="../../Images/settings.png" alt="setting" onclick="changeToSettings()">
-    </div> -->
-    <div id="return"> <button type="button" id="button" name="returnB" onclick="changeToPrevious()"><img
-                src="../../Images/retun.png" alt="return"></button></div>
-</div>
+<body>
+    <div class="glob">
+        <img src="../../Images/profile-user.png" alt="caraDaPessoa" id="pfp">
+        <p id="id">Id: </p>
+        <p id="nome">Name: </p>
+        <p id="dist">Distance: </p>
+        <button id="remove" onclick="appearRemoveDiv()">
+            <img src="../../Images/remove-user.png" alt="removeIcon" id="remUser">
+        </button>
+        <div id="return"> <button type="button" id="button" name="returnB" onclick="changeToPrevious()"><img
+                    src="../../Images/retun.png" alt="return"></button></div>
+    </div>
+
+    <div id="removeDiv">
+        <p>Are you sure you want to remove this friend ?</p>
+        <button id="Accept"><img src="../../Images/accept.png" alt="AcceptIcon" onclick="removeAlt()"></button>
+        <button id="Decline"><img src="../../Images/decline.png" alt="DeclineIcon" onclick="vanishDiv()"></button>
+    </div>
+
+</body>
+
 <script src="../../js/fotos.js"></script>
 <script src="../../js/profile.js"></script>
 

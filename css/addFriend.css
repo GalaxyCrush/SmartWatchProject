@@ -8,16 +8,10 @@ html {
 
 .glob {
     position: relative;
-    z-index: 98;
-    border-radius: 50%;
-    height: 232.2px;
-    width: 232.2px;
-    border: 0px;
-    list-style: none;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
     background-color: white;
+    height: 14.525em;
+    width: 14.525em;
+    top: -1em;
 }
 
 #return {
@@ -70,7 +64,16 @@ button {
     margin-bottom: 1em;
     width: 70%;
     height: 70%;
-    left: 2.3em;
+    left: 3.5em;
+    top: 1em;
+}
+
+#InName {
+    padding-left: 1em;
+}
+
+#InId {
+    padding-left: 2.1em;
 }
 
 #info {
@@ -97,4 +100,86 @@ button {
 #id {
     top: -2em;
     margin-top: -4em;
+}
+
+#alertDiv {
+    position: relative;
+    display: none;
+    background-color: white;
+    height: 14.525em;
+    width: 14.525em;
+    top: -16.5em;
+}
+
+#alertDiv p {
+    position: relative;
+    text-align: center;
+    top: 3em;
+}
+
+#alertDiv button {
+    position: relative;
+    max-width: 50%;
+    height: 5em;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 2.625em;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+
+#ContinueOperation {
+    right: 5em;
+    top: 4em;
+}
+
+#ReturnToFriendList {
+    right: -5em;
+    top: -1.2em;
+}
+
+#returnIm {
+    position: relative;
+    border: 1px solid black;
+    width: 5.5em;
+    height: auto;
+    top: -0.8em;
+}
+
+#returnFriend {
+    border: 1px solid black;
+    position: relative;
+    width: 5.5em;
+    height: auto;
+    top: -0.8em;
+}
+
+#tempDiv {
+    text-align: center;
+    position: relative;
+    height: 5.5em;
+    width: auto;
+    top: -15em;
+    right: 0em;
+    background-color: grey;
+    transition: opacity 1s ease;
+}
+
+#tempDiv p {
+    position: relative;
+    top: 1.85em;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#tempDiv.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#backBut {
+    position: relative;
+    top: -0.8em;
+    left: -0.4em;
 }

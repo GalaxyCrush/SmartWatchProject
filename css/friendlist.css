@@ -60,6 +60,12 @@ button {
 
 }
 
+#previous {
+    position: relative;
+    top: -1em;
+}
+
+
 #addFriend img {
     width: 2em;
     height: auto;
