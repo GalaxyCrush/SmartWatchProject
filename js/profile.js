@@ -28,7 +28,15 @@ function loadPf() {
     id.innerText += current.id;
     let dist = Math.floor((Math.random() * 500) + 1);
     distancia.innerText += " " + dist + " m";
-    img.src = photos.get(current.id);
+
+    let pf = new Map(JSON.parse(localStorage.getItem("fotos")));
+    img.src = pf.get(current.id);
 }
 
 window.onload = loadPf();
+
+function removeAlt() {
+    const elem = document.getElementById("id").innerHTML;
+    const toRemove = elem.split(":");
+    localStorage.setItem("remove", toRemove);
+}

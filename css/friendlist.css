@@ -12,11 +12,12 @@ html {
     border-radius: 50%;
     height: 232.2px;
     width: 232.2px;
+    border: 0px;
     list-style: none;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
+    background-color: white;
 }
 
 #return {

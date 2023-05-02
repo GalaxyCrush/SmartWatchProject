@@ -7,15 +7,16 @@ html {
 
 
 .glob {
-    text-align: center;
     position: relative;
     z-index: 98;
     border-radius: 50%;
     height: 232.2px;
     width: 232.2px;
+    border: 0px;
     list-style: none;
     overflow: hidden;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
     background-color: white;
 }
 
