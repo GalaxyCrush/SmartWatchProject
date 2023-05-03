@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/addWaypoint.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <div class="glob">
+        <form id="addForm">
+            <p id="InName">Insert waypoint name</p>
+            <input type="text" id="info">
+            <p id="InId">Insert household</p>
+            <input type="text" id="id">
+        </form>
+        <button value="Submit" id="inFriend" onclick="addWaypoint()"><img src="../../../Images/add.png" alt="addB"
+                id="addBImage"></button>
+
+
+        <div id="return"> <button type="button" id="button" name="returnB" onclick="changeToPrevious()"><img
+                    src="../../../Images/back.png" alt="return" id="backBut"></button></div>
+    </div>
+
+    <div id="alertDiv">
+        <p>Name and Id must be filled</p>
+        <button id="ContinueOperation"><img src="../../Images/back.png" alt="AcceptIcon" onclick="changeToPrevious()"
+                id="returnWay"></button>
+        <button id="ReturnToFriendList"><img src="../../Images/friendlist.png" alt="DeclineIcon" onclick="vanishDiv()"
+                id="returnList"></button>
+    </div>
+</body>
+
+<script src="../../../js/addWaypoint.js"></script>
+<script src="../../../js/caminhos.js"></script>
+
+</html>

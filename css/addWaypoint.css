@@ -1,0 +1,187 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+
+.glob {
+    position: relative;
+    background-color: white;
+    height: 14.525em;
+    width: 14.525em;
+    top: -1em;
+}
+
+#return {
+    position: absolute;
+    width: 116px;
+    height: 28px;
+    top: 200px;
+    right: 60px;
+}
+
+#return img {
+    max-width: 150%;
+}
+
+button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+
+
+#inFriend {
+    position: absolute;
+    top: 8.7em;
+    right: 6em;
+    width: 30%;
+    height: 30%;
+    color: blueviolet;
+    background-color: transparent;
+    transition-duration: 0.4s;
+}
+
+
+#addBImage {
+    width: 2.5em;
+    height: auto;
+}
+
+
+#addForm {
+    position: relative;
+    top: 0em;
+    margin-bottom: 1em;
+    width: 70%;
+    height: 70%;
+    left: 3.5em;
+    top: 1em;
+}
+
+#InName {
+    padding-left: 1em;
+}
+
+#InId {
+    padding-left: 2.1em;
+}
+
+#info {
+    margin-bottom: -2em;
+}
+
+#InId {
+    position: relative;
+    top: -0.7em;
+    left: -1.6em;
+}
+
+#InName {
+    position: relative;
+    top: 1em;
+    left: -1.5em;
+}
+
+#info,
+#id {
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+#id {
+    top: -2em;
+    margin-top: -4em;
+}
+
+#alertDiv {
+    position: relative;
+    display: none;
+    background-color: white;
+    height: 14.525em;
+    width: 14.525em;
+    top: -16.5em;
+}
+
+#alertDiv p {
+    position: relative;
+    text-align: center;
+    top: 3em;
+}
+
+#alertDiv button {
+    position: relative;
+    max-width: 50%;
+    height: 5em;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 2.625em;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+
+#ContinueOperation {
+    right: 5em;
+    top: 4em;
+}
+
+#ReturnToFriendList {
+    right: -5em;
+    top: -1.2em;
+}
+
+#returnList {
+    position: relative;
+    border: 1px solid black;
+    width: 5.5em;
+    height: auto;
+    top: -0.8em;
+}
+
+#returnWay {
+    border: 1px solid black;
+    position: relative;
+    width: 5.5em;
+    height: auto;
+    top: -0.8em;
+}
+
+#tempDiv {
+    text-align: center;
+    position: relative;
+    height: 5.5em;
+    width: auto;
+    top: -15em;
+    right: 0em;
+    background-color: grey;
+    transition: opacity 1s ease;
+}
+
+#tempDiv p {
+    position: relative;
+    top: 1.85em;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#tempDiv.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#backBut {
+    position: relative;
+    top: -0.8em;
+    left: -0.4em;
+}

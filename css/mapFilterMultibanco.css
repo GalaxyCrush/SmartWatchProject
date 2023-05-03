@@ -38,9 +38,10 @@ html {
 
 #return {
     position: absolute;
-    width: 100%;
+    width: 85%;
     height: auto;
-    top: 195px;
+    top: 11.8em;
+    right: 1em;
 }
 
 #button {

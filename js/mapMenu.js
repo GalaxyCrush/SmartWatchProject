@@ -1,4 +1,4 @@
-let URLs = ["../Mapa/filter.html", "../Mapa/waypoints.html", "../MainMenu/map.html"];
+let URLs = ["../Mapa/filter.html", "../Mapa/Waypoints/waypointlist.html", "../MainMenu/map.html"];
 
 function changeToFilterMenu() {
     document.location.href = URLs[0];

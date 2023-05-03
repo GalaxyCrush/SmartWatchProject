@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/waypoint.css">
+</head>
+
+<body>
+    <div class="glob">
+        <img src="../../../Images/profile-user.png" alt="caraDaPessoa" id="pfp">
+        <button id="remove" onclick="appearRemoveDiv()">
+            <img src="../../../Images/removeWayPoint.png" alt="removeIcon" id="remUser">
+        </button>
+
+        <div id="return">
+            <button type="button" id="button" name="returnB" onclick="changeToPrevious()">
+                <img src="../../../Images/back.png" alt="return">
+            </button>
+        </div>
+
+    </div>
+
+    <div id="removeDiv">
+        <p>Are you sure you want to remove this waypoint ?</p>
+        <button id="Accept"><img src="../../../Images/accept.png" alt="AcceptIcon" onclick="removeAlt()"></button>
+        <button id="Decline"><img src="../../../Images/decline.png" alt="DeclineIcon" onclick="vanishDiv()"></button>
+    </div>
+
+</body>
+
+<script src="../../../js/caminhos.js"></script>
+<script src="../../../js/waypoint.js"></script>
+
+</html>

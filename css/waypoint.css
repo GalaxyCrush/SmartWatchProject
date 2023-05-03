@@ -13,47 +13,11 @@ html {
 }
 
 img {
-    max-width: 70%;
     height: auto;
     display: block;
     margin: auto;
 }
 
-#notes,
-#settings {
-    height: 100%;
-    width: 50%;
-}
-
-.glob img {
-    max-width: 40%;
-}
-
-#notes {
-    position: absolute;
-    top: 60px;
-    border: 2px solid black;
-    height: 30px;
-    width: 30px;
-    right: 187px;
-}
-
-#notes img {
-    max-width: 100%;
-}
-
-#settings {
-    position: absolute;
-    top: 60px;
-    border: 2px solid black;
-    height: 30px;
-    width: 30px;
-    right: 10px;
-}
-
-#settings img {
-    max-width: 100%;
-}
 
 .glob p {
     text-align: center;
@@ -70,7 +34,7 @@ img {
 
 #return img {
     position: relative;
-    width: 8em;
+    width: 3em;
     height: 3em;
     top: -0.5em;
 }
@@ -94,7 +58,10 @@ img {
 }
 
 #pfp {
-    border-radius: 50%;
+    position: relative;
+    background-color: white;
+    height: 14.525em;
+    width: 14.525em;
 }
 
 #removeDiv {
@@ -114,7 +81,6 @@ img {
 
 #removeDiv button {
     position: relative;
-    max-width: 50%;
     height: auto;
     margin: auto;
     border: 0px;
@@ -125,13 +91,21 @@ img {
 }
 
 #Accept {
-    right: 1em;
+    right: -0.4em;
     top: 4em;
 }
 
+#Accept img {
+    height: 5em;
+}
+
+#Decline img {
+    height: 5em;
+}
+
 #Decline {
-    right: -10em;
-    top: -1.2em;
+    right: -2em;
+    top: 4em;
 }
 
 #remove {
@@ -146,38 +120,17 @@ img {
     border-radius: 40px;
     cursor: pointer;
     padding: 6px 16px;
-    top: -5.7em;
-    right: -9.5em;
+    top: -11em;
+    right: -9em;
 }
 
 #remove img {
     position: relative;
-    width: 5em;
-    height: 2.2em;
-    right: 2em;
+    width: 3em;
+    height: 3em;
+    right: 1.5em;
 }
 
 #pfp1 {
     border-radius: 50%;
-}
-
-#toFriend {
-    position: relative;
-    height: auto;
-    display: block;
-    margin: auto;
-    background-color: transparent;
-    border-radius: 2.625em;
-    cursor: pointer;
-    padding: 6px 10px;
-    top: -9em;
-    right: 9.5em;
-    border: 1px solid black;
-}
-
-#toFriend img {
-    position: relative;
-    height: 3em;
-    width: 7em;
-    left: 2.4em;
 }

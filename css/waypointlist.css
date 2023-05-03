@@ -1,0 +1,134 @@
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.glob {
+    position: relative;
+    z-index: 98;
+    border-radius: 50%;
+    height: 232.2px;
+    width: 232.2px;
+    border: 0px;
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#return {
+    position: absolute;
+    width: 116px;
+    height: 1px;
+    top: 200px;
+    right: 60px;
+}
+
+#return img {
+    width: 150%;
+    height: auto;
+}
+
+button {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+}
+
+#addWaypoint {
+    position: relative;
+    width: 10%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 42px;
+    cursor: pointer;
+    padding: 6px 16px;
+    right: -0.5em;
+
+}
+
+#previous {
+    position: relative;
+    top: -1em;
+}
+
+
+#addWaypoint img {
+    width: 3.5em;
+    height: auto;
+    right: 1em;
+}
+
+
+ul {
+    position: relative;
+    list-style: none;
+    margin-top: 2em;
+    margin-left: 1em;
+    left: 0.5em;
+    overflow-y: scroll;
+    height: 10em;
+
+}
+
+li {
+    width: 90px;
+    height: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 0.8em;
+    color: #fff;
+    background: dodgerblue;
+    margin: 10px 0;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    height: auto;
+    position: relative;
+}
+
+#waypoints img {
+    left: -3em;
+    top: -0.2em;
+}
+
+li p {
+    position: relative;
+    top: -1.25em;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

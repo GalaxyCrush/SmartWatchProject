@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="../../css/friendlist.css">
 </head>
 
-<div class="glob">
-    <div id="list">
-        <ul id="amigos">
-        </ul>
+<body>
+    <div class="glob">
+        <div id="list">
+            <ul id="amigos">
+            </ul>
+        </div>
+        <button type="button" id="addFriend" onclick="changeToAddFriend()"><img src="../../Images/add-user.png"
+                alt="newFriend"></button>
+        <div id="return"> <button type="button" id="previous" name="returnB" onclick="changeToPrevious()"><img
+                    src="../../Images/back.png" alt="return"></button></div>
     </div>
-    <button type="button" id="addFriend" onclick="changeToAddFriend()"><img src="../../Images/add-user.png"
-            alt="newFriend"></button>
-    <div id="return"> <button type="button" id="previous" name="returnB" onclick="changeToPrevious()"><img
-                src="../../Images/back.png" alt="return"></button></div>
-</div>
+</body>
 
 <script src="../../js/fotos.js"></script>
 <script src="../../js/friendlist.js"></script>

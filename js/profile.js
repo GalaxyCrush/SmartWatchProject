@@ -1,10 +1,12 @@
-let URLs = ["../Social/friendlist.html"];
+let URLs = ["../Social/friendlist.html", "../Social/toFriend.html"];
 
 
 function changeToPrevious() {
     document.location.href = URLs[0];
 }
-
+function goToPlace() {
+    document.location.href = URLs[1];
+}
 function load() {
     const fString = localStorage.getItem("current");
     if (fString !== null) {

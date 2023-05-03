@@ -1,4 +1,4 @@
-let URLs = ["../Social/friendlist.html"];
+let URLs = ["../Waypoints/waypointlist.html"];
 
 
 function changeToPrevious() {
@@ -6,17 +6,14 @@ function changeToPrevious() {
 }
 
 function load() {
-    const fString = localStorage.getItem("amigos");
+    const fString = localStorage.getItem("waypoints");
     if (fString !== null) {
         return JSON.parse(fString);
     }
     return [];
 }
 
-const friends = load();
-
-document.getElementById("info").setAttribute('required', 'true');
-document.getElementById("id").setAttribute('required', 'true');
+const waypoints = load();
 
 document.getElementById("info").addEventListener("beforeinput", (e) => {
     let aux = e.data;
@@ -30,16 +27,16 @@ document.getElementById("info").addEventListener("beforeinput", (e) => {
 
 document.getElementById("id").addEventListener("beforeinput", (e) => {
     let aux = e.data;
-    if (!(aux >= '0' && aux <= '9') && aux !== null) {
+    if ((aux >= '0' && aux <= '9') && aux !== null) {
         e.preventDefault();
     }
-    if (e.currentTarget.value.length > 7 && aux !== null) {
+    if (e.currentTarget.value.length > 20 && aux !== null) {
         e.preventDefault();
     }
 });
 
 
-function addFriend() {
+function addWaypoint() {
     let frName = document.getElementById("info").value;
 
     if (frName == null || frName == "") {
@@ -54,7 +51,7 @@ function addFriend() {
     }
 
     let val = false;
-    let fo = new Map(JSON.parse(localStorage.getItem("fotos")))
+    let fo = new Map(JSON.parse(localStorage.getItem("caminhos")))
     let it = fo.keys();
     for (let i of it) {
         if (i == frId) {
@@ -63,17 +60,17 @@ function addFriend() {
     }
     if (!val) {
 
-        fo.set(frId + "", defaultPhoto[Math.floor((Math.random() * 25))]);
-        localStorage.setItem("fotos", JSON.stringify(Array.from(fo.entries())));
+        fo.set(frId + "", defaultCaminho[Math.floor((Math.random() * 4))]);
+        localStorage.setItem("caminhos", JSON.stringify(Array.from(fo.entries())));
     }
 
     if (verifyFriend(frId) === -1) {
-        const friend = {
+        const waypoint = {
             name: frName,
-            id: frId
+            morada: frId
         };
-        friends.push(friend);
-        localStorage.setItem("amigos", JSON.stringify(friends));
+        waypoints.push(waypoint);
+        localStorage.setItem("waypoints", JSON.stringify(waypoints));
         changeToPrevious();
     }
     else {
@@ -94,7 +91,7 @@ function addFriend() {
 }
 
 function verifyFriend(verId) {
-    return friends.findIndex(f => f.id === verId);
+    return waypoints.findIndex(f => f.morada === verId);
 }
 
 function appearAlerDiv() {
