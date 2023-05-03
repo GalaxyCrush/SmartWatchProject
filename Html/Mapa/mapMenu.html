@@ -5,21 +5,25 @@
     <link rel="stylesheet" href="../../css/mapMenu.css">
 </head>
 
-<div class="glob">
-    <div id="waypoints" onclick="changeToWayPointsMenu()">
-        <img src="../../Images/house.png" alt="waypoints">
-        <p>Way Points</p>
+<body>
+    <div class="glob">
+        <div id="waypoints" onclick="changeToWayPointsMenu()">
+            <img src="../../Images/house.png" alt="waypoints">
+            <p>Way Points</p>
+        </div>
+        <div id="filter" onclick="changeToFilterMenu()">
+            <img src="../../Images/filter.png" alt="filter">
+            <p>Filter</p>
+        </div>
     </div>
-    <div id="filter" onclick="changeToFilterMenu()">
-        <img src="../../Images/filter.png" alt="filter">
-        <p>Filter</p>
+
+    <div id="return">
+        <button type="button" id="button" name="returnB" onclick="changeToMap()">
+            <img src="../../Images/retun3.png" alt="return">
+        </button>
     </div>
-</div>
-<div id="return">
-    <button type="button" id="button" name="returnB" onclick="changeToMap()"><img src="../../Images/retun3.png"
-            alt="return"></button>
-</div>
-</div>
+
+</body>
 
 <script src="../../js/mapMenu.js"></script>
 

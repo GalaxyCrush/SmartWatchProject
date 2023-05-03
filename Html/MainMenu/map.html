@@ -5,24 +5,27 @@
     <link rel="stylesheet" href="../../css/map.css">
 </head>
 
-<div class="glob">
+<body>
+    <div class="glob">
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.312785442303!2d-9.160245948330635!3d38.75652938240994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932fc1d6c5e9b%3A0xe04b42461bdb164c!2sFaculdade%20de%20Ci%C3%AAncias%20da%20Universidade%20de%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1682360974248!5m2!1spt-PT!2spt"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div id="map">
-        <img src="../../Images/mapa.png" alt="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.312785442303!2d-9.160245948330635!3d38.75652938240994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1932fc1d6c5e9b%3A0xe04b42461bdb164c!2sFaculdade%20de%20Ci%C3%AAncias%20da%20Universidade%20de%20Lisboa!5e0!3m2!1spt-PT!2spt!4v1682360974248!5m2!1spt-PT!2spt"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map">
+            <img src="../../Images/mapa.png" alt="map">
+        </div>
+        <div id="mapMenu">
+            <button type="button" id="mapButton" name="returnB" onclick="changeToMapMenu()"><img
+                    src="../../Images/map_Menu.png" alt="mapMenu">
+        </div>
+        <div id="return">
+            <button type="button" id="button" name="returnB" onclick="changeToMainMenu()"><img
+                    src="../../Images/retun3.png" alt="return"></button>
+        </div>
     </div>
-    <div id="mapMenu">
-        <button type="button" id="mapButton" name="returnB" onclick="changeToMapMenu()"><img
-                src="../../Images/map_Menu.png" alt="mapMenu">
-    </div>
-    <div id="return">
-        <button type="button" id="button" name="returnB" onclick="changeToMainMenu()"><img src="../../Images/retun3.png"
-                alt="return"></button>
-    </div>
-</div>
+</body>
+
 <script src="../../js/map.js"></script>
 
 </html>

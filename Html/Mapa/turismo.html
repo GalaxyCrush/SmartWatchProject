@@ -5,21 +5,23 @@
     <link rel="stylesheet" href="../../css/turismo.css">
 </head>
 
-<div class="glob">
-    <div id="museum" onclick="changeToMapFilterMuseu()">
-        <img src="../../Images/museum.png" alt="museum">
-        <p>Museum</p>
+<body>
+    <div class="glob">
+        <div id="museum" onclick="changeToMapFilterMuseu()">
+            <img src="../../Images/museum.png" alt="museum">
+            <p>Museum</p>
+        </div>
+        <div id="hotel" onclick="changeToMapFilterHotel()">
+            <img src="../../Images/hotel.png" alt="hotel">
+            <p>Hotels</p>
+        </div>
     </div>
-    <div id="hotel" onclick="changeToMapFilterHotel()">
-        <img src="../../Images/hotel.png" alt="hotel">
-        <p>Hotels</p>
+    <div id="return">
+        <button type="button" id="button" name="returnB" onclick="changeToMap()"><img src="../../Images/retun.png"
+                alt="return"></button>
     </div>
-</div>
-<div id="return">
-    <button type="button" id="button" name="returnB" onclick="changeToMap()"><img src="../../Images/retun.png"
-            alt="return"></button>
-</div>
-</div>
+
+</body>
 
 <script src="../../js/turismo.js"></script>
 
